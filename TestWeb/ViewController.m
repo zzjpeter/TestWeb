@@ -46,7 +46,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType API_DEPRECATED("No longer supported.", ios(2.0, 12.0)){
     NSLog(@"webView delegate1:%@",self.webView.delegate);
-    if ([request.URL.absoluteString containsString:@"wiseindex"]) {
+    if ([request.URL.absoluteString containsString:@"newspage/data/landingpage"]) {
         
         [[JumpManager sharedManager] jumpToVC];
         
